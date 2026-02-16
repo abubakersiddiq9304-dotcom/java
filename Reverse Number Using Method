@@ -1,0 +1,25 @@
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+    Scanner s = new Scanner(System.in);
+8
+        String t1 = s.nextLine();
+9
+    StringBuilder b = new StringBuilder(t1);
+10
+        b.reverse();
+11
+        System.out.println(b);
+12
+}
+13
+}
