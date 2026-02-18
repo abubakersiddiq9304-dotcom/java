@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+interface Calculator {
+    int add(int a, int b);
+    int subtract(int a, int b);
+}
+
+class SimpleCalculator implements Calculator {
+
+    
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+  
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        
+        Calculator calculator = new SimpleCalculator();
+        
+        System.out.println(calculator.add(a, b));
+        System.out.println(calculator.subtract(a, b));
+        
+      
+    }
+}
